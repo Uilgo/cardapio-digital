@@ -1,0 +1,1507 @@
+{
+  "categorias": [
+    {
+      "id": "cat-1",
+      "nome": "Pizzas Tradicionais",
+      "descricao": "Pizzas clássicas com ingredientes tradicionais",
+      "icone": "🍕",
+      "grupo": "Pizzas",
+      "ordem": 1,
+      "ativo": true,
+      "config": {
+        "permitirMeiasMeias": true,
+        "maxSabores": 3
+      },
+      "promocao": {
+        "tipo": "porcentagem",
+        "valor": 10
+      }
+    },
+    {
+      "id": "cat-2",
+      "nome": "Pizzas Doces",
+      "descricao": "Pizzas doces e sobremesas",
+      "icone": "🍫",
+      "grupo": "Pizzas",
+      "ordem": 2,
+      "ativo": true,
+      "config": {
+        "permitirMeiasMeias": true,
+        "maxSabores": 2
+      },
+      "promocao": null
+    },
+    {
+      "id": "cat-3",
+      "nome": "Pizzas Especiais",
+      "descricao": "Pizzas gourmet com ingredientes premium",
+      "icone": "⭐",
+      "grupo": "Pizzas",
+      "ordem": 3,
+      "ativo": true,
+      "config": {
+        "permitirMeiasMeias": true,
+        "maxSabores": 2
+      },
+      "promocao": null
+    },
+    {
+      "id": "cat-4",
+      "nome": "Hambúrgueres Clássicos",
+      "descricao": "Smash burgers e clássicos com carnes selecionadas",
+      "icone": "🍔",
+      "grupo": "Hambúrgueres",
+      "ordem": 4,
+      "ativo": true,
+      "config": {},
+      "promocao": null
+    },
+    {
+      "id": "cat-5",
+      "nome": "Hambúrgueres Especiais",
+      "descricao": "Burgers premium com ingredientes diferenciados",
+      "icone": "🔥",
+      "grupo": "Hambúrgueres",
+      "ordem": 5,
+      "ativo": true,
+      "config": {},
+      "promocao": null
+    },
+    {
+      "id": "cat-6",
+      "nome": "Açaís Tradicionais",
+      "descricao": "Açaí puro e cremoso com complementos clássicos",
+      "icone": "🍇",
+      "grupo": "Açaís",
+      "ordem": 6,
+      "ativo": true,
+      "config": {},
+      "promocao": null
+    },
+    {
+      "id": "cat-7",
+      "nome": "Açaís Especiais",
+      "descricao": "Açaí com combinações exclusivas e ingredientes premium",
+      "icone": "✨",
+      "grupo": "Açaís",
+      "ordem": 7,
+      "ativo": true,
+      "config": {},
+      "promocao": null
+    },
+    {
+      "id": "cat-8",
+      "nome": "Refrigerantes",
+      "descricao": "Refrigerantes gelados",
+      "icone": "🥤",
+      "grupo": "Bebidas",
+      "ordem": 8,
+      "ativo": true,
+      "config": {},
+      "promocao": null
+    },
+    {
+      "id": "cat-9",
+      "nome": "Sucos e Vitaminas",
+      "descricao": "Sucos naturais e vitaminas feitos na hora",
+      "icone": "🍊",
+      "grupo": "Bebidas",
+      "ordem": 9,
+      "ativo": true,
+      "config": {},
+      "promocao": null
+    },
+    {
+      "id": "cat-10",
+      "nome": "Salgados Fritos",
+      "descricao": "Salgados fritos crocantes feitos na hora",
+      "icone": "🥟",
+      "grupo": "Salgados",
+      "ordem": 10,
+      "ativo": true,
+      "config": {},
+      "promocao": null
+    },
+    {
+      "id": "cat-11",
+      "nome": "Salgados Assados",
+      "descricao": "Salgados assados levinho e saborosos",
+      "icone": "🥐",
+      "grupo": "Salgados",
+      "ordem": 11,
+      "ativo": true,
+      "config": {},
+      "promocao": null
+    }
+  ],
+  "produtos": [
+    {
+      "id": "prod-1",
+      "categoriaId": "cat-1",
+      "nome": "Pizza Mussarela",
+      "descricao": "Molho de tomate artesanal, mozzarella de búfala e orégano fresco",
+      "imagem": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&h=300&fit=crop",
+      "variacoes": [
+        {
+          "id": "var-1-1",
+          "nome": "Pequena",
+          "preco": 28.9,
+          "ordem": 1,
+          "ativo": true
+        },
+        {
+          "id": "var-1-2",
+          "nome": "Média",
+          "preco": 38.9,
+          "ordem": 2,
+          "ativo": true
+        },
+        {
+          "id": "var-1-3",
+          "nome": "Grande",
+          "preco": 48.9,
+          "ordem": 3,
+          "ativo": true
+        }
+      ],
+      "gruposAdicionaisIds": [
+        "grp-4",
+        "grp-5",
+        "grp-6"
+      ],
+      "ordem": 1,
+      "disponivel": true,
+      "ativo": true,
+      "destaque": false,
+      "emOferta": false,
+      "detalhes": {
+        "porcao": "2–3 pessoas",
+        "massa": "Fina"
+      },
+      "promocao": null
+    },
+    {
+      "id": "prod-2",
+      "categoriaId": "cat-1",
+      "nome": "Pizza Calabresa",
+      "descricao": "Molho de tomate, mozzarella, calabresa defumada e cebola roxa",
+      "imagem": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=300&fit=crop",
+      "variacoes": [
+        {
+          "id": "var-2-1",
+          "nome": "Pequena",
+          "preco": 30.9,
+          "ordem": 1,
+          "ativo": true
+        },
+        {
+          "id": "var-2-2",
+          "nome": "Média",
+          "preco": 41.9,
+          "ordem": 2,
+          "ativo": true
+        },
+        {
+          "id": "var-2-3",
+          "nome": "Grande",
+          "preco": 52.9,
+          "ordem": 3,
+          "ativo": true
+        }
+      ],
+      "gruposAdicionaisIds": [
+        "grp-4",
+        "grp-5",
+        "grp-6"
+      ],
+      "ordem": 2,
+      "disponivel": true,
+      "ativo": true,
+      "destaque": true,
+      "emOferta": true,
+      "detalhes": {
+        "porcao": "2–3 pessoas",
+        "massa": "Fina"
+      },
+      "promocao": {
+        "tipo": "porcentagem",
+        "valor": 15
+      }
+    },
+    {
+      "id": "prod-3",
+      "categoriaId": "cat-1",
+      "nome": "Pizza Frango com Catupiry",
+      "descricao": "Frango desfiado temperado, catupiry original e milho verde",
+      "imagem": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400&h=300&fit=crop",
+      "variacoes": [
+        {
+          "id": "var-3-1",
+          "nome": "Pequena",
+          "preco": 32.9,
+          "ordem": 1,
+          "ativo": true
+        },
+        {
+          "id": "var-3-2",
+          "nome": "Média",
+          "preco": 45.9,
+          "ordem": 2,
+          "ativo": true
+        },
+        {
+          "id": "var-3-3",
+          "nome": "Grande",
+          "preco": 55.9,
+          "ordem": 3,
+          "ativo": true
+        }
+      ],
+      "gruposAdicionaisIds": [
+        "grp-4",
+        "grp-5",
+        "grp-6"
+      ],
+      "ordem": 3,
+      "disponivel": true,
+      "ativo": true,
+      "destaque": false,
+      "emOferta": false,
+      "detalhes": {
+        "porcao": "2–3 pessoas",
+        "massa": "Fina"
+      },
+      "promocao": null
+    },
+    {
+      "id": "prod-4",
+      "categoriaId": "cat-1",
+      "nome": "Pizza Portuguesa",
+      "descricao": "Presunto, ovos, cebola, azeitona e mozzarella",
+      "imagem": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=400&h=300&fit=crop",
+      "variacoes": [
+        {
+          "id": "var-4-1",
+          "nome": "Pequena",
+          "preco": 33.9,
+          "ordem": 1,
+          "ativo": true
+        },
+        {
+          "id": "var-4-2",
+          "nome": "Média",
+          "preco": 47.9,
+          "ordem": 2,
+          "ativo": true
+        },
+        {
+          "id": "var-4-3",
+          "nome": "Grande",
+          "preco": 58.9,
+          "ordem": 3,
+          "ativo": true
+        }
+      ],
+      "gruposAdicionaisIds": [
+        "grp-4",
+        "grp-5",
+        "grp-6"
+      ],
+      "ordem": 4,
+      "disponivel": true,
+      "ativo": true,
+      "destaque": false,
+      "emOferta": false,
+      "detalhes": {
+        "porcao": "2–3 pessoas",
+        "massa": "Fina"
+      },
+      "promocao": null
+    },
+    {
+      "id": "prod-5",
+      "categoriaId": "cat-2",
+      "nome": "Pizza Chocolate com Morango",
+      "descricao": "Chocolate meio amargo derretido com morangos frescos",
+      "imagem": "https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=400&h=300&fit=crop",
+      "variacoes": [
+        {
+          "id": "var-5-1",
+          "nome": "Pequena",
+          "preco": 35.9,
+          "ordem": 1,
+          "ativo": true
+        },
+        {
+          "id": "var-5-2",
+          "nome": "Média",
+          "preco": 49.9,
+          "ordem": 2,
+          "ativo": true
+        },
+        {
+          "id": "var-5-3",
+          "nome": "Grande",
+          "preco": 62.9,
+          "ordem": 3,
+          "ativo": true
+        }
+      ],
+      "gruposAdicionaisIds": [
+        "grp-4",
+        "grp-5",
+        "grp-6"
+      ],
+      "ordem": 1,
+      "disponivel": true,
+      "ativo": true,
+      "destaque": true,
+      "emOferta": false,
+      "detalhes": {
+        "porcao": "2–3 pessoas",
+        "massa": "Fina"
+      },
+      "promocao": null
+    },
+    {
+      "id": "prod-6",
+      "categoriaId": "cat-2",
+      "nome": "Pizza Romeu e Julieta",
+      "descricao": "Goiabada cascão com queijo minas derretido",
+      "imagem": "https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=400&h=300&fit=crop",
+      "variacoes": [
+        {
+          "id": "var-6-1",
+          "nome": "Pequena",
+          "preco": 33.9,
+          "ordem": 1,
+          "ativo": true
+        },
+        {
+          "id": "var-6-2",
+          "nome": "Média",
+          "preco": 46.9,
+          "ordem": 2,
+          "ativo": true
+        },
+        {
+          "id": "var-6-3",
+          "nome": "Grande",
+          "preco": 58.9,
+          "ordem": 3,
+          "ativo": true
+        }
+      ],
+      "gruposAdicionaisIds": [
+        "grp-4",
+        "grp-5",
+        "grp-6"
+      ],
+      "ordem": 2,
+      "disponivel": true,
+      "ativo": true,
+      "destaque": false,
+      "emOferta": false,
+      "detalhes": {
+        "porcao": "2–3 pessoas",
+        "massa": "Fina"
+      },
+      "promocao": null
+    },
+    {
+      "id": "prod-7",
+      "categoriaId": "cat-3",
+      "nome": "Pizza 4 Queijos",
+      "descricao": "Mozzarella, gorgonzola, parmesão e provolone derretidos",
+      "imagem": "https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=400&h=300&fit=crop",
+      "variacoes": [
+        {
+          "id": "var-7-1",
+          "nome": "Pequena",
+          "preco": 35.9,
+          "ordem": 1,
+          "ativo": true
+        },
+        {
+          "id": "var-7-2",
+          "nome": "Média",
+          "preco": 52.9,
+          "ordem": 2,
+          "ativo": true
+        },
+        {
+          "id": "var-7-3",
+          "nome": "Grande",
+          "preco": 64.9,
+          "ordem": 3,
+          "ativo": true
+        }
+      ],
+      "gruposAdicionaisIds": [
+        "grp-4",
+        "grp-5",
+        "grp-6"
+      ],
+      "ordem": 1,
+      "disponivel": true,
+      "ativo": true,
+      "destaque": true,
+      "emOferta": true,
+      "detalhes": {
+        "porcao": "2–3 pessoas",
+        "massa": "Fina"
+      },
+      "promocao": {
+        "tipo": "porcentagem",
+        "valor": 15
+      }
+    },
+    {
+      "id": "prod-8",
+      "categoriaId": "cat-3",
+      "nome": "Pizza Trufada",
+      "descricao": "Creme de trufa, cogumelos shiitake e parmesão",
+      "imagem": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=400&h=300&fit=crop",
+      "variacoes": [
+        {
+          "id": "var-8-1",
+          "nome": "Pequena",
+          "preco": 42.9,
+          "ordem": 1,
+          "ativo": true
+        },
+        {
+          "id": "var-8-2",
+          "nome": "Média",
+          "preco": 59.9,
+          "ordem": 2,
+          "ativo": true
+        },
+        {
+          "id": "var-8-3",
+          "nome": "Grande",
+          "preco": 74.9,
+          "ordem": 3,
+          "ativo": true
+        }
+      ],
+      "gruposAdicionaisIds": [
+        "grp-4",
+        "grp-5",
+        "grp-6"
+      ],
+      "ordem": 2,
+      "disponivel": true,
+      "ativo": true,
+      "destaque": false,
+      "emOferta": false,
+      "detalhes": {
+        "porcao": "2–3 pessoas",
+        "massa": "Fina"
+      },
+      "promocao": null
+    },
+    {
+      "id": "prod-9",
+      "categoriaId": "cat-4",
+      "nome": "X-Burguer Clássico",
+      "descricao": "Pão brioche, 150g de carne, queijo cheddar, alface, tomate e maionese",
+      "imagem": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=300&fit=crop",
+      "variacoes": [
+        {
+          "id": "var-9-1",
+          "nome": "Simples",
+          "preco": 28.9,
+          "ordem": 1,
+          "ativo": true
+        },
+        {
+          "id": "var-9-2",
+          "nome": "Duplo",
+          "preco": 38.9,
+          "ordem": 2,
+          "ativo": true
+        }
+      ],
+      "gruposAdicionaisIds": [
+        "grp-1",
+        "grp-2"
+      ],
+      "ordem": 1,
+      "disponivel": true,
+      "ativo": true,
+      "destaque": false,
+      "emOferta": false,
+      "detalhes": {
+        "pao": "Brioche",
+        "carne": "150g Angus"
+      },
+      "promocao": null
+    },
+    {
+      "id": "prod-10",
+      "categoriaId": "cat-4",
+      "nome": "Frango Crispy",
+      "descricao": "Filé de frango empanado crocante, queijo, alface americana e maionese de ervas",
+      "imagem": "https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=400&h=300&fit=crop",
+      "variacoes": [
+        {
+          "id": "var-10-1",
+          "nome": "Simples",
+          "preco": 30.9,
+          "ordem": 1,
+          "ativo": true
+        },
+        {
+          "id": "var-10-2",
+          "nome": "Duplo",
+          "preco": 40.9,
+          "ordem": 2,
+          "ativo": true
+        }
+      ],
+      "gruposAdicionaisIds": [
+        "grp-1",
+        "grp-2"
+      ],
+      "ordem": 2,
+      "disponivel": true,
+      "ativo": true,
+      "destaque": true,
+      "emOferta": false,
+      "detalhes": {
+        "pao": "Brioche",
+        "carne": "Frango empanado"
+      },
+      "promocao": null
+    },
+    {
+      "id": "prod-11",
+      "categoriaId": "cat-5",
+      "nome": "Smash Bacon",
+      "descricao": "Dois smash patties, bacon crocante, cheddar derretido e molho especial",
+      "imagem": "https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=400&h=300&fit=crop",
+      "variacoes": [
+        {
+          "id": "var-11-1",
+          "nome": "Simples",
+          "preco": 36.9,
+          "ordem": 1,
+          "ativo": true
+        },
+        {
+          "id": "var-11-2",
+          "nome": "Duplo",
+          "preco": 46.9,
+          "ordem": 2,
+          "ativo": true
+        }
+      ],
+      "gruposAdicionaisIds": [
+        "grp-1",
+        "grp-2"
+      ],
+      "ordem": 1,
+      "disponivel": true,
+      "ativo": true,
+      "destaque": true,
+      "emOferta": true,
+      "detalhes": {
+        "pao": "Brioche",
+        "carne": "2x Smash Angus"
+      },
+      "promocao": {
+        "tipo": "porcentagem",
+        "valor": 15
+      }
+    },
+    {
+      "id": "prod-12",
+      "categoriaId": "cat-5",
+      "nome": "Double Smash",
+      "descricao": "Três smash patties, três fatias de cheddar, picles e molho secreto",
+      "imagem": "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=400&h=300&fit=crop",
+      "variacoes": [
+        {
+          "id": "var-12-1",
+          "nome": "Padrão",
+          "preco": 44.9,
+          "ordem": 1,
+          "ativo": true
+        }
+      ],
+      "gruposAdicionaisIds": [
+        "grp-1",
+        "grp-2"
+      ],
+      "ordem": 2,
+      "disponivel": true,
+      "ativo": true,
+      "destaque": false,
+      "emOferta": true,
+      "detalhes": {
+        "pao": "Brioche",
+        "carne": "3x Smash Angus"
+      },
+      "promocao": {
+        "tipo": "porcentagem",
+        "valor": 15
+      }
+    },
+    {
+      "id": "prod-13",
+      "categoriaId": "cat-6",
+      "nome": "Açaí Tradicional",
+      "descricao": "Açaí puro e cremoso com granola, banana e mel",
+      "imagem": "https://images.unsplash.com/photo-1590301157890-4810ed352733?w=400&h=300&fit=crop",
+      "variacoes": [
+        {
+          "id": "var-13-1",
+          "nome": "300ml",
+          "preco": 14.9,
+          "ordem": 1,
+          "ativo": true
+        },
+        {
+          "id": "var-13-2",
+          "nome": "500ml",
+          "preco": 18.9,
+          "ordem": 2,
+          "ativo": true
+        },
+        {
+          "id": "var-13-3",
+          "nome": "700ml",
+          "preco": 24.9,
+          "ordem": 3,
+          "ativo": true
+        }
+      ],
+      "gruposAdicionaisIds": [
+        "grp-3"
+      ],
+      "ordem": 1,
+      "disponivel": true,
+      "ativo": true,
+      "destaque": false,
+      "emOferta": false,
+      "detalhes": {
+        "semGluten": false,
+        "vegano": true
+      },
+      "promocao": null
+    },
+    {
+      "id": "prod-14",
+      "categoriaId": "cat-6",
+      "nome": "Açaí Fitness",
+      "descricao": "Açaí sem adição de açúcar, chia, granola sem glúten e frutas vermelhas",
+      "imagem": "https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=400&h=300&fit=crop",
+      "variacoes": [
+        {
+          "id": "var-14-1",
+          "nome": "300ml",
+          "preco": 17.9,
+          "ordem": 1,
+          "ativo": true
+        },
+        {
+          "id": "var-14-2",
+          "nome": "500ml",
+          "preco": 24.9,
+          "ordem": 2,
+          "ativo": true
+        }
+      ],
+      "gruposAdicionaisIds": [
+        "grp-3"
+      ],
+      "ordem": 2,
+      "disponivel": true,
+      "ativo": true,
+      "destaque": false,
+      "emOferta": false,
+      "detalhes": {
+        "vegano": true,
+        "semGluten": true,
+        "semAcucar": true
+      },
+      "promocao": null
+    },
+    {
+      "id": "prod-15",
+      "categoriaId": "cat-7",
+      "nome": "Açaí com Nutella",
+      "descricao": "Açaí cremoso com Nutella, morango fresco e granola crocante",
+      "imagem": "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?w=400&h=300&fit=crop",
+      "variacoes": [
+        {
+          "id": "var-15-1",
+          "nome": "300ml",
+          "preco": 22.9,
+          "ordem": 1,
+          "ativo": true
+        },
+        {
+          "id": "var-15-2",
+          "nome": "500ml",
+          "preco": 29.9,
+          "ordem": 2,
+          "ativo": true
+        }
+      ],
+      "gruposAdicionaisIds": [
+        "grp-3"
+      ],
+      "ordem": 1,
+      "disponivel": true,
+      "ativo": true,
+      "destaque": true,
+      "emOferta": false,
+      "detalhes": {
+        "semGluten": false,
+        "vegano": false
+      },
+      "promocao": null
+    },
+    {
+      "id": "prod-16",
+      "categoriaId": "cat-7",
+      "nome": "Açaí Tropical",
+      "descricao": "Açaí com manga, abacaxi, coco ralado e calda de maracujá",
+      "imagem": "https://images.unsplash.com/photo-1505252585461-04db1eb84625?w=400&h=300&fit=crop",
+      "variacoes": [
+        {
+          "id": "var-16-1",
+          "nome": "300ml",
+          "preco": 19.9,
+          "ordem": 1,
+          "ativo": true
+        },
+        {
+          "id": "var-16-2",
+          "nome": "500ml",
+          "preco": 27.9,
+          "ordem": 2,
+          "ativo": true
+        }
+      ],
+      "gruposAdicionaisIds": [
+        "grp-3"
+      ],
+      "ordem": 2,
+      "disponivel": true,
+      "ativo": true,
+      "destaque": false,
+      "emOferta": true,
+      "detalhes": {
+        "semGluten": false,
+        "vegano": true
+      },
+      "promocao": {
+        "tipo": "porcentagem",
+        "valor": 15
+      }
+    },
+    {
+      "id": "prod-17",
+      "categoriaId": "cat-8",
+      "nome": "Coca-Cola",
+      "descricao": "Refrigerante gelado",
+      "imagem": "https://images.unsplash.com/photo-1554866585-cd94860890b7?w=400&h=300&fit=crop",
+      "variacoes": [
+        {
+          "id": "var-17-1",
+          "nome": "Lata 350ml",
+          "preco": 6.9,
+          "ordem": 1,
+          "ativo": true
+        },
+        {
+          "id": "var-17-2",
+          "nome": "1L",
+          "preco": 9.9,
+          "ordem": 2,
+          "ativo": true
+        },
+        {
+          "id": "var-17-3",
+          "nome": "2L",
+          "preco": 12.9,
+          "ordem": 3,
+          "ativo": true
+        }
+      ],
+      "gruposAdicionaisIds": [],
+      "ordem": 1,
+      "disponivel": true,
+      "ativo": true,
+      "destaque": false,
+      "emOferta": false,
+      "detalhes": {},
+      "promocao": null
+    },
+    {
+      "id": "prod-18",
+      "categoriaId": "cat-8",
+      "nome": "Guaraná Antarctica",
+      "descricao": "Refrigerante gelado",
+      "imagem": "https://images.unsplash.com/photo-1527960471264-932f39eb5846?w=400&h=300&fit=crop",
+      "variacoes": [
+        {
+          "id": "var-18-1",
+          "nome": "Lata 350ml",
+          "preco": 6.9,
+          "ordem": 1,
+          "ativo": true
+        },
+        {
+          "id": "var-18-2",
+          "nome": "2L",
+          "preco": 11.9,
+          "ordem": 2,
+          "ativo": true
+        }
+      ],
+      "gruposAdicionaisIds": [],
+      "ordem": 2,
+      "disponivel": true,
+      "ativo": true,
+      "destaque": false,
+      "emOferta": true,
+      "detalhes": {},
+      "promocao": {
+        "tipo": "valor",
+        "valor": 2.0
+      }
+    },
+    {
+      "id": "prod-19",
+      "categoriaId": "cat-9",
+      "nome": "Suco de Laranja Natural",
+      "descricao": "Suco feito na hora com laranjas selecionadas",
+      "imagem": "https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?w=400&h=300&fit=crop",
+      "variacoes": [
+        {
+          "id": "var-19-1",
+          "nome": "300ml",
+          "preco": 8.9,
+          "ordem": 1,
+          "ativo": true
+        },
+        {
+          "id": "var-19-2",
+          "nome": "500ml",
+          "preco": 10.9,
+          "ordem": 2,
+          "ativo": true
+        }
+      ],
+      "gruposAdicionaisIds": [],
+      "ordem": 1,
+      "disponivel": true,
+      "ativo": true,
+      "destaque": false,
+      "emOferta": false,
+      "detalhes": {
+        "natural": true,
+        "semAcucar": true
+      },
+      "promocao": null
+    },
+    {
+      "id": "prod-20",
+      "categoriaId": "cat-9",
+      "nome": "Milk Shake",
+      "descricao": "Milk shake cremoso com sorvete artesanal",
+      "imagem": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=400&h=300&fit=crop",
+      "variacoes": [
+        {
+          "id": "var-20-1",
+          "nome": "Chocolate",
+          "preco": 19.9,
+          "ordem": 1,
+          "ativo": true
+        },
+        {
+          "id": "var-20-2",
+          "nome": "Morango",
+          "preco": 19.9,
+          "ordem": 2,
+          "ativo": true
+        },
+        {
+          "id": "var-20-3",
+          "nome": "Baunilha",
+          "preco": 18.9,
+          "ordem": 3,
+          "ativo": true
+        }
+      ],
+      "gruposAdicionaisIds": [],
+      "ordem": 2,
+      "disponivel": true,
+      "ativo": true,
+      "destaque": true,
+      "emOferta": false,
+      "detalhes": {
+        "sorvete": "Artesanal"
+      },
+      "promocao": null
+    },
+    {
+      "id": "prod-21",
+      "categoriaId": "cat-10",
+      "nome": "Coxinha de Frango",
+      "descricao": "Coxinha crocante recheada com frango desfiado e catupiry",
+      "imagem": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=300&fit=crop",
+      "variacoes": [
+        {
+          "id": "var-21-1",
+          "nome": "Unidade",
+          "preco": 7.9,
+          "ordem": 1,
+          "ativo": true
+        },
+        {
+          "id": "var-21-2",
+          "nome": "6 unidades",
+          "preco": 39.9,
+          "ordem": 2,
+          "ativo": true
+        }
+      ],
+      "gruposAdicionaisIds": [],
+      "ordem": 1,
+      "disponivel": true,
+      "ativo": true,
+      "destaque": false,
+      "emOferta": false,
+      "detalhes": {},
+      "promocao": null
+    },
+    {
+      "id": "prod-22",
+      "categoriaId": "cat-10",
+      "nome": "Pastel de Queijo",
+      "descricao": "Pastel frito crocante recheado com queijo mussarela derretido",
+      "imagem": "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=400&h=300&fit=crop",
+      "variacoes": [
+        {
+          "id": "var-22-1",
+          "nome": "Unidade",
+          "preco": 8.9,
+          "ordem": 1,
+          "ativo": true
+        },
+        {
+          "id": "var-22-2",
+          "nome": "6 unidades",
+          "preco": 44.9,
+          "ordem": 2,
+          "ativo": true
+        }
+      ],
+      "gruposAdicionaisIds": [],
+      "ordem": 2,
+      "disponivel": true,
+      "ativo": true,
+      "destaque": true,
+      "emOferta": true,
+      "detalhes": {},
+      "promocao": {
+        "tipo": "valor",
+        "valor": 2.0
+      }
+    },
+    {
+      "id": "prod-23",
+      "categoriaId": "cat-11",
+      "nome": "Pão de Queijo",
+      "descricao": "Pão de queijo mineiro assado na hora",
+      "imagem": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=300&fit=crop",
+      "variacoes": [
+        {
+          "id": "var-23-1",
+          "nome": "6 unidades",
+          "preco": 12.9,
+          "ordem": 1,
+          "ativo": true
+        },
+        {
+          "id": "var-23-2",
+          "nome": "12 unidades",
+          "preco": 22.9,
+          "ordem": 2,
+          "ativo": true
+        }
+      ],
+      "gruposAdicionaisIds": [],
+      "ordem": 1,
+      "disponivel": true,
+      "ativo": true,
+      "destaque": true,
+      "emOferta": true,
+      "detalhes": {
+        "origem": "Mineiro"
+      },
+      "promocao": {
+        "tipo": "valor",
+        "valor": 3.0
+      }
+    },
+    {
+      "id": "prod-24",
+      "categoriaId": "cat-11",
+      "nome": "Esfiha de Carne",
+      "descricao": "Esfiha aberta com carne moída temperada e tomate",
+      "imagem": "https://images.unsplash.com/photo-1628191081676-8d0e4b2a4c3e?w=400&h=300&fit=crop",
+      "variacoes": [
+        {
+          "id": "var-24-1",
+          "nome": "Unidade",
+          "preco": 6.9,
+          "ordem": 1,
+          "ativo": true
+        },
+        {
+          "id": "var-24-2",
+          "nome": "6 unidades",
+          "preco": 34.9,
+          "ordem": 2,
+          "ativo": true
+        }
+      ],
+      "gruposAdicionaisIds": [],
+      "ordem": 2,
+      "disponivel": true,
+      "ativo": true,
+      "destaque": false,
+      "emOferta": false,
+      "detalhes": {},
+      "promocao": null
+    }
+  ],
+  "gruposAdicionais": [
+    {
+      "id": "grp-1",
+      "nome": "Ponto da Carne",
+      "descricao": "Como você prefere o ponto da carne?",
+      "obrigatorio": true,
+      "minSelecao": 1,
+      "maxSelecao": 1,
+      "ordem": 1,
+      "ativo": true,
+      "adicionais": [
+        {
+          "id": "add-1-1",
+          "nome": "Mal passado",
+          "preco": 0,
+          "maxUnidades": 1,
+          "ordem": 1,
+          "ativo": true
+        },
+        {
+          "id": "add-1-2",
+          "nome": "Ao ponto",
+          "preco": 0,
+          "maxUnidades": 1,
+          "ordem": 2,
+          "ativo": true
+        },
+        {
+          "id": "add-1-3",
+          "nome": "Bem passado",
+          "preco": 0,
+          "maxUnidades": 1,
+          "ordem": 3,
+          "ativo": true
+        }
+      ]
+    },
+    {
+      "id": "grp-2",
+      "nome": "Adicionais do Burguer",
+      "descricao": "Adicione ingredientes extras",
+      "obrigatorio": false,
+      "minSelecao": 0,
+      "maxSelecao": 5,
+      "ordem": 2,
+      "ativo": true,
+      "adicionais": [
+        {
+          "id": "add-2-1",
+          "nome": "Bacon extra",
+          "preco": 4.0,
+          "maxUnidades": 2,
+          "ordem": 1,
+          "ativo": true
+        },
+        {
+          "id": "add-2-2",
+          "nome": "Queijo extra",
+          "preco": 3.0,
+          "maxUnidades": 2,
+          "ordem": 2,
+          "ativo": true
+        },
+        {
+          "id": "add-2-3",
+          "nome": "Ovo frito",
+          "preco": 3.0,
+          "maxUnidades": 1,
+          "ordem": 3,
+          "ativo": true
+        },
+        {
+          "id": "add-2-4",
+          "nome": "Cebola caramelizada",
+          "preco": 2.0,
+          "maxUnidades": 1,
+          "ordem": 4,
+          "ativo": true
+        },
+        {
+          "id": "add-2-5",
+          "nome": "Molho especial",
+          "preco": 1.5,
+          "maxUnidades": 1,
+          "ordem": 5,
+          "ativo": true
+        }
+      ]
+    },
+    {
+      "id": "grp-3",
+      "nome": "Complementos do Açaí",
+      "descricao": "Escolha os complementos",
+      "obrigatorio": false,
+      "minSelecao": 0,
+      "maxSelecao": 6,
+      "ordem": 3,
+      "ativo": true,
+      "adicionais": [
+        {
+          "id": "add-3-1",
+          "nome": "Granola",
+          "preco": 0,
+          "maxUnidades": 1,
+          "ordem": 1,
+          "ativo": true
+        },
+        {
+          "id": "add-3-2",
+          "nome": "Banana",
+          "preco": 0,
+          "maxUnidades": 1,
+          "ordem": 2,
+          "ativo": true
+        },
+        {
+          "id": "add-3-3",
+          "nome": "Morango",
+          "preco": 2.0,
+          "maxUnidades": 1,
+          "ordem": 3,
+          "ativo": true
+        },
+        {
+          "id": "add-3-4",
+          "nome": "Leite condensado",
+          "preco": 1.5,
+          "maxUnidades": 2,
+          "ordem": 4,
+          "ativo": true
+        },
+        {
+          "id": "add-3-5",
+          "nome": "Nutella",
+          "preco": 4.0,
+          "maxUnidades": 1,
+          "ordem": 5,
+          "ativo": true
+        },
+        {
+          "id": "add-3-6",
+          "nome": "Paçoca",
+          "preco": 2.0,
+          "maxUnidades": 1,
+          "ordem": 6,
+          "ativo": true
+        }
+      ]
+    },
+    {
+      "id": "grp-4",
+      "nome": "Bordas Recheadas",
+      "descricao": "Escolha a borda da sua pizza",
+      "obrigatorio": false,
+      "minSelecao": 0,
+      "maxSelecao": 1,
+      "ordem": 4,
+      "ativo": true,
+      "adicionais": [
+        {
+          "id": "add-4-1",
+          "nome": "Borda de Catupiry",
+          "preco": 8.0,
+          "maxUnidades": 1,
+          "ordem": 1,
+          "ativo": true
+        },
+        {
+          "id": "add-4-2",
+          "nome": "Borda de Cheddar",
+          "preco": 8.0,
+          "maxUnidades": 1,
+          "ordem": 2,
+          "ativo": true
+        },
+        {
+          "id": "add-4-3",
+          "nome": "Borda de Chocolate",
+          "preco": 10.0,
+          "maxUnidades": 1,
+          "ordem": 3,
+          "ativo": true
+        }
+      ]
+    },
+    {
+      "id": "grp-5",
+      "nome": "Adicionais Extras",
+      "descricao": "Turbine sua pizza com mais sabor",
+      "obrigatorio": false,
+      "minSelecao": 0,
+      "maxSelecao": 3,
+      "ordem": 5,
+      "ativo": true,
+      "adicionais": [
+        {
+          "id": "add-5-1",
+          "nome": "Bacon extra",
+          "preco": 5.0,
+          "maxUnidades": 2,
+          "ordem": 1,
+          "ativo": true
+        },
+        {
+          "id": "add-5-2",
+          "nome": "Catupiry original",
+          "preco": 6.0,
+          "maxUnidades": 1,
+          "ordem": 2,
+          "ativo": true
+        },
+        {
+          "id": "add-5-3",
+          "nome": "Milho",
+          "preco": 3.0,
+          "maxUnidades": 1,
+          "ordem": 3,
+          "ativo": true
+        },
+        {
+          "id": "add-5-4",
+          "nome": "Cebola roxa",
+          "preco": 2.0,
+          "maxUnidades": 1,
+          "ordem": 4,
+          "ativo": true
+        }
+      ]
+    },
+    {
+      "id": "grp-6",
+      "nome": "Retirar Ingredientes",
+      "descricao": "O que deseja retirar?",
+      "obrigatorio": false,
+      "minSelecao": 0,
+      "maxSelecao": 4,
+      "ordem": 6,
+      "ativo": true,
+      "adicionais": [
+        {
+          "id": "add-6-1",
+          "nome": "Sem Cebola",
+          "preco": 0,
+          "maxUnidades": 1,
+          "ordem": 1,
+          "ativo": true
+        },
+        {
+          "id": "add-6-2",
+          "nome": "Sem Azeitona",
+          "preco": 0,
+          "maxUnidades": 1,
+          "ordem": 2,
+          "ativo": true
+        },
+        {
+          "id": "add-6-3",
+          "nome": "Sem Orégano",
+          "preco": 0,
+          "maxUnidades": 1,
+          "ordem": 3,
+          "ativo": true
+        }
+      ]
+    }
+  ],
+  "combos": [
+    {
+      "id": "combo-1",
+      "nome": "Combo Família Pizza",
+      "descricao": "2 pizzas médias + 2 refrigerantes 2L",
+      "imagem": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&h=300&fit=crop",
+      "preco": 89.9,
+      "ativo": true,
+      "ordem": 1,
+      "dataInicio": null,
+      "dataFim": null,
+      "grupos": [
+        {
+          "id": "cgrp-1-1",
+          "nome": "Escolha as Pizzas (2)",
+          "obrigatorio": true,
+          "minSelecao": 2,
+          "maxSelecao": 2,
+          "ordem": 1,
+          "opcoes": [
+            {
+              "id": "copt-1-1-1",
+              "produtoId": "prod-1",
+              "variacaoId": "var-1-2",
+              "precoExtra": 0,
+              "ordem": 1,
+              "ativo": true
+            },
+            {
+              "id": "copt-1-1-2",
+              "produtoId": "prod-2",
+              "variacaoId": "var-2-2",
+              "precoExtra": 0,
+              "ordem": 2,
+              "ativo": true
+            },
+            {
+              "id": "copt-1-1-3",
+              "produtoId": "prod-3",
+              "variacaoId": "var-3-2",
+              "precoExtra": 0,
+              "ordem": 3,
+              "ativo": true
+            },
+            {
+              "id": "copt-1-1-4",
+              "produtoId": "prod-7",
+              "variacaoId": "var-7-2",
+              "precoExtra": 5.0,
+              "ordem": 4,
+              "ativo": true
+            }
+          ]
+        },
+        {
+          "id": "cgrp-1-2",
+          "nome": "Escolha as Bebidas (2)",
+          "obrigatorio": true,
+          "minSelecao": 2,
+          "maxSelecao": 2,
+          "ordem": 2,
+          "opcoes": [
+            {
+              "id": "copt-1-2-1",
+              "produtoId": "prod-17",
+              "variacaoId": "var-17-3",
+              "precoExtra": 0,
+              "ordem": 1,
+              "ativo": true
+            },
+            {
+              "id": "copt-1-2-2",
+              "produtoId": "prod-18",
+              "variacaoId": "var-18-2",
+              "precoExtra": 0,
+              "ordem": 2,
+              "ativo": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "combo-2",
+      "nome": "Combo Burguer + Bebida",
+      "descricao": "Qualquer burguer + bebida lata com desconto",
+      "imagem": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=300&fit=crop",
+      "preco": 34.9,
+      "ativo": true,
+      "ordem": 2,
+      "dataInicio": null,
+      "dataFim": null,
+      "grupos": [
+        {
+          "id": "cgrp-2-1",
+          "nome": "Escolha o Burguer",
+          "obrigatorio": true,
+          "minSelecao": 1,
+          "maxSelecao": 1,
+          "ordem": 1,
+          "opcoes": [
+            {
+              "id": "copt-2-1-1",
+              "produtoId": "prod-9",
+              "variacaoId": "var-9-1",
+              "precoExtra": 0,
+              "ordem": 1,
+              "ativo": true
+            },
+            {
+              "id": "copt-2-1-2",
+              "produtoId": "prod-11",
+              "variacaoId": "var-11-1",
+              "precoExtra": 4.0,
+              "ordem": 2,
+              "ativo": true
+            },
+            {
+              "id": "copt-2-1-3",
+              "produtoId": "prod-10",
+              "variacaoId": "var-10-1",
+              "precoExtra": 0,
+              "ordem": 3,
+              "ativo": true
+            }
+          ]
+        },
+        {
+          "id": "cgrp-2-2",
+          "nome": "Escolha a Bebida",
+          "obrigatorio": true,
+          "minSelecao": 1,
+          "maxSelecao": 1,
+          "ordem": 2,
+          "opcoes": [
+            {
+              "id": "copt-2-2-1",
+              "produtoId": "prod-17",
+              "variacaoId": "var-17-1",
+              "precoExtra": 0,
+              "ordem": 1,
+              "ativo": true
+            },
+            {
+              "id": "copt-2-2-2",
+              "produtoId": "prod-18",
+              "variacaoId": "var-18-1",
+              "precoExtra": 0,
+              "ordem": 2,
+              "ativo": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

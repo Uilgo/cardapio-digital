@@ -1,0 +1,120 @@
+{
+  "name": "Mestre dos Salgados",
+  "slogan": "Salgados, pizzas e bebidas com muito sabor!",
+  "description": "Especialistas em salgados e mini salgados artesanais, pizzas quentinhas e bebidas geladas. Sucos, vitaminas e refrigerantes para completar seu pedido.",
+  "slug": "mestre-dos-salgados",
+  "logo": "../assets/img/logo.png",
+  "capa": null,
+
+  "whatsapp": "5584996551792",
+  "phone": null,
+  "instagram": "@mestreDOSsalgados",
+  "address": "Rua das Flores, 123 — Centro",
+  "city": "Santa Maria",
+  "state": "RN",
+
+  "currency": "BRL",
+  "locale": "pt-BR",
+
+  "status": "ativo",
+  "_status_opcoes": {
+    "_doc": "Status do estabelecimento no sistema",
+    "ativo":    "Estabelecimento visível e operando normalmente",
+    "inativo":  "Estabelecimento oculto do cardápio público",
+    "rascunho": "Em configuração, não visível para clientes"
+  },
+
+  "aberto": true,
+  "_aberto_doc": "Usado apenas quando modo_funcionamento é 'manual'. true = aberto agora, false = fechado.",
+
+  "modo_funcionamento": "automatico",
+  "_modo_funcionamento_opcoes": {
+    "_doc": "Define como o status aberto/fechado é calculado",
+    "automatico": "Calcula automaticamente com base no array 'horarios'. Ignora o campo 'aberto'.",
+    "manual":     "Usa o campo 'aberto' diretamente. Útil para fechar/abrir fora do horário normal."
+  },
+
+  "horarios": [
+    {
+      "_doc_dia_semana": "Valores válidos: segunda | terca | quarta | quinta | sexta | sabado | domingo",
+      "_doc_periodos":   "Suporta múltiplos períodos por dia. Ex: almoço 11-14h + jantar 18-22h",
+      "_doc_aberto":     "false = dia fechado, periodos[] pode ficar vazio"
+    },
+    { "dia_semana": "segunda", "aberto": true,  "periodos": [{ "horario_abertura": "08:00", "horario_fechamento": "22:00" }] },
+    { "dia_semana": "terca",   "aberto": true,  "periodos": [{ "horario_abertura": "08:00", "horario_fechamento": "22:00" }] },
+    { "dia_semana": "quarta",  "aberto": true,  "periodos": [{ "horario_abertura": "08:00", "horario_fechamento": "22:00" }] },
+    { "dia_semana": "quinta",  "aberto": true,  "periodos": [{ "horario_abertura": "08:00", "horario_fechamento": "22:00" }] },
+    { "dia_semana": "sexta",   "aberto": true,  "periodos": [{ "horario_abertura": "08:00", "horario_fechamento": "23:00" }] },
+    { "dia_semana": "sabado",  "aberto": true,  "periodos": [{ "horario_abertura": "10:00", "horario_fechamento": "23:00" }] },
+    { "dia_semana": "domingo", "aberto": false, "periodos": [] }
+  ],
+
+  "aceita_delivery": true,
+  "aceita_retirada": true,
+
+  "tempo_entrega_min": 30,
+  "tempo_entrega_max": 60,
+  "tempo_retirada_min": 15,
+  "tempo_retirada_max": 20,
+
+  "valor_minimo_pedido": null,
+
+  "tipo_taxa_entrega": "taxa_localizacao",
+  "_tipo_taxa_entrega_opcoes": {
+    "_doc": "Escolha UMA das opções abaixo e coloque o valor em tipo_taxa_entrega",
+    "sem_taxa":        "Entrega sempre grátis. Ignora taxa_entrega e taxas_por_localizacao.",
+    "taxa_unica":      "Valor fixo para todos os bairros/cidades. Usa o campo taxa_entrega.",
+    "taxa_localizacao": "Taxa diferente por bairro. Usa taxas_por_localizacao. Se o bairro não estiver na lista, aplica taxa_padrao_outros_bairros (se > 0) ou bloqueia o pedido."
+  },
+
+  "taxa_entrega": 5.0,
+
+  "taxa_padrao_outros_bairros": 8.0,
+
+  "cidades_atendidas": ["Santa Maria"],
+
+  "taxas_por_localizacao": [
+    {
+      "_doc_status":     "ativado = bairro atendido | desativado = bairro ignorado (não aparece para o cliente)",
+      "_doc_taxa_valor": "Taxa em reais. Use 0 para entrega grátis neste bairro.",
+      "_doc_tempo":      "tempo_min e tempo_max em minutos. Sobrescreve tempo_entrega_min/max global para este bairro."
+    },
+    { "id": "bairro-1", "nome": "Centro",        "cidade": "Santa Maria", "taxa_valor": 0,  "tempo_min": 25, "tempo_max": 40, "status": "ativado" },
+    { "id": "bairro-2", "nome": "Campos Novos",        "cidade": "Santa Maria", "taxa_valor": 5.0,  "tempo_min": 30, "tempo_max": 50, "status": "ativado" },
+    { "id": "bairro-3", "nome": "Vila Tota Azevedo",   "cidade": "Santa Maria", "taxa_valor": 5.0,  "tempo_min": 35, "tempo_max": 55, "status": "ativado" },
+    { "id": "bairro-4", "nome": "Bancos",          "cidade": "Santa Maria", "taxa_valor": 7.0,  "tempo_min": 35, "tempo_max": 55, "status": "ativado" },
+    { "id": "bairro-5", "nome": "Jurumenha",      "cidade": "Santa Maria", "taxa_valor": 7.0,  "tempo_min": 40, "tempo_max": 60, "status": "ativado" }
+  ],
+
+  "pagamentos": ["Dinheiro", "Pix", "Cartão de Crédito", "Cartão de Débito"],
+  "_pagamentos_opcoes": {
+    "_doc":              "Array com os métodos aceitos. Remova os que não aceita. Ordem define a exibição no checkout.",
+    "_valores_sistema":  "O sistema reconhece: 'cash' (Dinheiro), 'pix' (PIX), 'credit' (Cartão de Crédito), 'debit' (Cartão de Débito)",
+    "cash":   "Dinheiro — pago na entrega/retirada. Exibe campo de troco opcional.",
+    "pix":    "PIX — cliente paga e envia comprovante via WhatsApp. Requer pixKey configurada.",
+    "credit": "Cartão de Crédito — pago na entrega/retirada.",
+    "debit":  "Cartão de Débito — pago na entrega/retirada."
+  },
+
+  "pixKey": "igorelias.pro@gmail.com",
+  "pixKeyType": "email",
+  "_pixKeyType_opcoes": {
+    "_doc":      "Tipo da chave PIX. Aparece como label na mensagem enviada ao WhatsApp.",
+    "email":     "Chave do tipo e-mail",
+    "cpf":       "Chave do tipo CPF",
+    "cnpj":      "Chave do tipo CNPJ",
+    "telefone":  "Chave do tipo telefone (com DDI, ex: +5511999887766)",
+    "aleatoria": "Chave aleatória gerada pelo banco"
+  },
+
+  "primaryColor": "#E85D04",
+
+  "tableService": false,
+  "deliveryService": true,
+  "_servicos_doc": {
+    "tableService":   "true = habilita pedidos por mesa (número da mesa no checkout). false = desabilitado.",
+    "deliveryService": "true = habilita delivery. false = apenas retirada no local.",
+    "aceita_delivery": "true = exibe opção Delivery no checkout.",
+    "aceita_retirada": "true = exibe opção Retirada no checkout. Pelo menos um deve ser true."
+  }
+}

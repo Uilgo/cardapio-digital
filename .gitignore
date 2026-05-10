@@ -1,0 +1,23 @@
+# Dependências
+node_modules/
+
+# Build
+dist/
+.cache/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env (variáveis sensíveis)
+.env
+.env.local
+
+# Logs
+*.log

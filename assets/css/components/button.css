@@ -1,0 +1,186 @@
+/* ============================================================
+   button.css — Componente Button
+   Variantes: primary, secondary, ghost, danger
+   ============================================================ */
+
+/* Base do botão */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-6);
+  border-radius: var(--radius-lg);
+  font-size: var(--text-sm);
+  font-weight: var(--font-semibold);
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  border: var(--border-width) solid transparent;
+  transition:
+    background-color var(--transition-fast),
+    border-color var(--transition-fast),
+    color var(--transition-fast),
+    box-shadow var(--transition-fast),
+    transform var(--transition-fast),
+    opacity var(--transition-fast);
+  /* Evitar seleção de texto em duplo clique */
+  user-select: none;
+  -webkit-user-select: none;
+  /* Prevenir tap highlight no iOS */
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn:disabled,
+.btn[aria-disabled='true'] {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* ----------------------------------------------------------
+   Variante: Primária (laranja — CTA principal)
+---------------------------------------------------------- */
+.btn--primary {
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-primary);
+}
+
+.btn--primary:hover {
+  background-color: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
+  box-shadow: 0 6px 20px 0 rgba(232, 93, 4, 0.40);
+  transform: translateY(-1px);
+}
+
+.btn--primary:active {
+  transform: scale(0.97) translateY(0);
+  box-shadow: var(--shadow-sm);
+}
+
+/* ----------------------------------------------------------
+   Variante: Secundária (outline)
+---------------------------------------------------------- */
+.btn--secondary {
+  background-color: transparent;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.btn--secondary:hover {
+  background-color: var(--color-primary-muted);
+  transform: translateY(-1px);
+}
+
+/* ----------------------------------------------------------
+   Variante: Ghost (sem borda)
+---------------------------------------------------------- */
+.btn--ghost {
+  background-color: transparent;
+  color: var(--color-text-secondary);
+  border-color: transparent;
+}
+
+.btn--ghost:hover {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* ----------------------------------------------------------
+   Variante: Surface (fundo neutro)
+---------------------------------------------------------- */
+.btn--surface {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  border-color: var(--color-border);
+}
+
+.btn--surface:hover {
+  background-color: var(--color-bg-alt);
+  border-color: var(--color-border-strong);
+}
+
+/* ----------------------------------------------------------
+   Variante: Danger
+---------------------------------------------------------- */
+.btn--danger {
+  background-color: var(--color-error);
+  color: var(--color-text-inverse);
+  border-color: var(--color-error);
+}
+
+.btn--danger:hover {
+  background-color: #B91C1C;
+  border-color: #B91C1C;
+  transform: translateY(-1px);
+}
+
+/* ----------------------------------------------------------
+   Tamanhos
+---------------------------------------------------------- */
+.btn--sm {
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--text-xs);
+  border-radius: var(--radius-md);
+}
+
+.btn--lg {
+  padding: var(--space-4) var(--space-8);
+  font-size: var(--text-base);
+  border-radius: var(--radius-xl);
+}
+
+.btn--full {
+  width: 100%;
+}
+
+/* ----------------------------------------------------------
+   Estado: Loading (com spinner)
+---------------------------------------------------------- */
+.btn--loading {
+  pointer-events: none;
+  opacity: 0.8;
+}
+
+.btn--loading::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  border: 2px solid currentColor;
+  border-top-color: transparent;
+  border-radius: var(--radius-full);
+  animation: btnSpinner 600ms linear infinite;
+  flex-shrink: 0;
+}
+
+@keyframes btnSpinner {
+  to { transform: rotate(360deg); }
+}
+
+/* ----------------------------------------------------------
+   Botão de ícone (sem texto)
+---------------------------------------------------------- */
+.btn--icon {
+  padding: var(--space-2);
+  border-radius: var(--radius-full);
+  width: 40px;
+  height: 40px;
+}
+
+.btn--icon.btn--sm {
+  width: 32px;
+  height: 32px;
+  padding: var(--space-1);
+}
+
+.btn--icon.btn--lg {
+  width: 48px;
+  height: 48px;
+  padding: var(--space-3);
+}

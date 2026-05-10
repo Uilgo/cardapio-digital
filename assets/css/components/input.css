@@ -1,0 +1,183 @@
+/* ============================================================
+   input.css — Inputs, textareas e controles de formulário
+   Usado por: QuantitySelector.js, ProductBottomSheet.js
+   ============================================================ */
+
+/* ----------------------------------------------------------
+   Input base
+---------------------------------------------------------- */
+.input {
+  display: block;
+  width: 100%;
+  padding: var(--space-3) var(--space-4);
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-lg);
+  font-size: var(--text-sm);
+  font-weight: var(--font-normal);
+  color: var(--color-text);
+  background-color: var(--color-surface);
+  outline: none;
+  transition:
+    border-color var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.input::placeholder {
+  color: var(--color-text-muted);
+}
+
+.input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px var(--color-primary-muted);
+}
+
+.input:disabled {
+  background-color: var(--color-bg);
+  color: var(--color-text-muted);
+  cursor: not-allowed;
+}
+
+/* Variante de erro */
+.input--error {
+  border-color: var(--color-error);
+}
+.input--error:focus {
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.12);
+}
+
+/* ----------------------------------------------------------
+   Selector de quantidade (+/-)
+   Usado pelo QuantitySelector.js
+---------------------------------------------------------- */
+.quantity-selector {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  background-color: var(--color-surface);
+}
+
+.quantity-selector__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  font-size: var(--text-base);
+  font-weight: var(--font-bold);
+  color: var(--color-primary);
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition:
+    background-color var(--transition-fast),
+    color var(--transition-fast);
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.quantity-selector__btn:hover {
+  background-color: var(--color-primary-muted);
+}
+
+.quantity-selector__btn:active {
+  background-color: var(--color-accent-light);
+  transform: scale(0.9);
+}
+
+.quantity-selector__btn:disabled {
+  color: var(--color-text-muted);
+  cursor: not-allowed;
+}
+
+.quantity-selector__btn:disabled:hover {
+  background-color: transparent;
+}
+
+.quantity-selector__value {
+  min-width: 32px;
+  text-align: center;
+  font-size: var(--text-base);
+  font-weight: var(--font-bold);
+  color: var(--color-text);
+  padding-inline: var(--space-1);
+  user-select: none;
+}
+
+/* Variante maior (no detalhe do produto) */
+.quantity-selector--lg .quantity-selector__btn  { width: 36px; height: 36px; font-size: var(--text-lg); }
+.quantity-selector--lg .quantity-selector__value { min-width: 36px; font-size: var(--text-base); }
+
+/* ----------------------------------------------------------
+   Campo de nome / mesa no checkout
+---------------------------------------------------------- */
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.field__label {
+  font-size: var(--text-sm);
+  font-weight: var(--font-semibold);
+  color: var(--color-text);
+}
+
+.field__hint {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+}
+
+.field__error {
+  font-size: var(--text-xs);
+  color: var(--color-error);
+}
+
+/* ----------------------------------------------------------
+   Input de busca (header)
+---------------------------------------------------------- */
+.search-input-wrapper {
+  position: relative;
+  flex: 1;
+}
+
+.search-input-wrapper__icon {
+  position: absolute;
+  top: 50%;
+  left: var(--space-3);
+  transform: translateY(-50%);
+  color: var(--color-text-muted);
+  pointer-events: none;
+}
+
+.search-input {
+  width: 100%;
+  padding: var(--space-2) var(--space-4) var(--space-2) calc(var(--space-3) + 20px + var(--space-2));
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-full);
+  font-size: var(--text-sm);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  outline: none;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.search-input::placeholder { color: var(--color-text-muted); }
+
+.search-input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px var(--color-primary-muted);
+  background-color: var(--color-surface);
+}
+
+.search-input__clear-btn {
+  position: absolute;
+  top: 50%;
+  right: var(--space-3);
+  transform: translateY(-50%);
+  color: var(--color-text-muted);
+  display: none;
+}
+.search-input__clear-btn--visible { display: flex; }

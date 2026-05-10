@@ -1,0 +1,130 @@
+/* ============================================================
+   default.css — Tema padrão (base para futuro dark mode)
+   Define apenas sobreposições globais de tema.
+   As variáveis base estão em variables.css
+   ============================================================ */
+
+/* Tema claro (padrão) — já aplicado via :root em variables.css */
+
+/* Scroll bar customizada (Webkit) */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-border-strong);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-text-muted);
+}
+
+/* Seleção de texto */
+::selection {
+  background-color: var(--color-primary-muted);
+  color: var(--color-primary-dark);
+}
+
+/* Focus visible acessível (navegação por teclado) */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+/* Remove outline default (mantemos apenas o :focus-visible) */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* ----------------------------------------------------------
+   Transição global suave ao carregar página
+---------------------------------------------------------- */
+.page-enter {
+  position: relative;
+  animation: pageEnter 300ms ease-out forwards;
+}
+
+@keyframes pageEnter {
+  from {
+    opacity: 0;
+    top: 8px;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+/* ----------------------------------------------------------
+   Utilitários de spacing globais
+---------------------------------------------------------- */
+.mt-0 {
+  margin-top: 0;
+}
+.mt-2 {
+  margin-top: var(--space-2);
+}
+.mt-4 {
+  margin-top: var(--space-4);
+}
+.mt-6 {
+  margin-top: var(--space-6);
+}
+.mt-8 {
+  margin-top: var(--space-8);
+}
+.mb-0 {
+  margin-bottom: 0;
+}
+.mb-2 {
+  margin-bottom: var(--space-2);
+}
+.mb-4 {
+  margin-bottom: var(--space-4);
+}
+.mb-6 {
+  margin-bottom: var(--space-6);
+}
+.p-4 {
+  padding: var(--space-4);
+}
+.px-4 {
+  padding-inline: var(--space-4);
+}
+.py-4 {
+  padding-block: var(--space-4);
+}
+.py-6 {
+  padding-block: var(--space-6);
+}
+
+/* ----------------------------------------------------------
+   Acessibilidade — Classe para leitores de tela
+---------------------------------------------------------- */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* ----------------------------------------------------------
+   Divisor visual
+---------------------------------------------------------- */
+.divider {
+  border: none;
+  border-top: var(--border-width) solid var(--color-divider);
+  margin-block: var(--space-4);
+}

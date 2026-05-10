@@ -1,0 +1,190 @@
+/* ============================================================
+   search-bar.css — Barra de busca e filtros dropdown
+   ============================================================ */
+
+.search-bar-container {
+  position: relative;
+  width: 100%;
+  background-color: var(--color-surface);
+  padding: var(--space-2) var(--space-2);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-border);
+}
+
+.search-bar__body {
+  display: flex;
+  gap: var(--space-3);
+  align-items: center;
+}
+
+.search-bar__input-wrapper {
+  flex: 1;
+}
+
+.search-bar__input {
+  width: 100%;
+  background-color: var(--color-bg-alt);
+  border: 1px solid transparent;
+  transition: all var(--transition-fast);
+}
+
+.search-bar__input:focus {
+  background-color: var(--color-surface);
+  border-color: var(--color-primary);
+}
+
+.search-bar__filter-btn {
+  color: var(--color-primary);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: var(--space-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  transition: background-color var(--transition-fast);
+}
+
+.search-bar__filter-btn:hover {
+  background-color: var(--color-primary-muted);
+}
+
+.search-bar__filter-btn--active {
+  background-color: var(--color-primary-muted);
+  color: var(--color-primary);
+}
+
+/* Dropdown de filtros/ordenação */
+.search-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: var(--space-2);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl); /* Mais arredondado como na imagem */
+  padding: var(
+    --space-2
+  ); /* Padding interno para que o hover não toque na borda do menu */
+  min-width: 240px;
+  box-shadow: var(--shadow-lg);
+  z-index: var(--z-dropdown, 100);
+  animation: dropdownEnter 0.2s ease-out;
+}
+
+@keyframes dropdownEnter {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.search-dropdown__item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-2) var(--space-4); /* Padding vertical reduzido para escala melhor */
+  margin-bottom: 4px;
+  font-size: var(--text-base);
+  font-weight: var(--font-medium);
+  color: #1a4332;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  border-radius: var(--radius-lg);
+  white-space: nowrap; /* Impede quebra de texto como 'Em promoção' */
+}
+
+.search-dropdown__item:last-child {
+  margin-bottom: 0;
+}
+
+.search-dropdown__item:hover {
+  background-color: #f1f5f9; /* Tom de cinza mais claro para hover */
+  color: #1a4332;
+}
+
+.search-dropdown__item--active {
+  background-color: var(--color-primary-muted);
+  color: var(--color-primary);
+  font-weight: var(--font-bold);
+}
+
+.search-dropdown__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #22c55e;
+  flex-shrink: 0;
+  width: 20px; /* Tamanho fixo para escala */
+}
+
+/* Estilo específico para Checkboxes nos filtros */
+.search-dropdown__checkbox {
+  width: 20px; /* Reduzido de 24px para escala melhor */
+  height: 20px;
+  border: 1px solid #e2e8f0; /* Borda sutil para não sumir no hover */
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+  background-color: #cbd5e1; /* Cor desmarcada mais escura que o hover */
+  flex-shrink: 0;
+}
+
+.search-dropdown__item--selected .search-dropdown__checkbox {
+  background-color: #22c55e; /* Verde quando selecionado */
+}
+
+.search-dropdown__item--selected .search-dropdown__checkbox::after {
+  content: "";
+  width: 5px;
+  height: 9px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  margin-bottom: 2px;
+}
+
+/* Novos estilos para Limpar e Labels */
+.search-bar__btn-label {
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  margin-left: var(--space-2);
+}
+
+@media (max-width: 480px) {
+  .search-bar__btn-label {
+    display: none;
+  }
+}
+
+.search-dropdown__divider {
+  height: 1px;
+  background-color: var(--color-border);
+  margin: var(--space-2) 0;
+}
+
+.search-dropdown__item--clear {
+  color: var(--color-error);
+  font-weight: var(--font-semibold);
+}
+
+.search-dropdown__item--clear .search-dropdown__icon {
+  color: var(--color-error);
+}
+
+.search-dropdown__item--clear:hover {
+  background-color: var(--color-error-light);
+  color: var(--color-error);
+}

@@ -1,0 +1,113 @@
+/* ============================================================
+   reset.css — Normalização e reset de estilos do browser
+   Baseado em: modern-normalize + opininated resets
+   ============================================================ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles em elementos com role list */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+html {
+  /* Scroll suave global */
+  scroll-behavior: smooth;
+  /* Evita texto inflado no iOS */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  /* Melhora renderização de fontes */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+/* Imagens e mídia responsivos por padrão */
+img,
+picture,
+video,
+canvas {
+  display: block;
+  max-width: 100%;
+}
+
+/* SVG: inline-flex para centralizar corretamente em containers flex */
+svg {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* Herança de fonte para inputs e botões */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+/* Evita overflow de texto longo */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* Remove decoração de links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Botão sem estilo padrão */
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+/* Remove aparência padrão do número em inputs */
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+/* Respeitar preferência de movimento reduzido */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+

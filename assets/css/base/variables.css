@@ -1,0 +1,194 @@
+/* ============================================================
+   variables.css — Design Tokens globais do sistema
+   Sistema de 8 pontos + paleta food & delivery
+   ============================================================ */
+
+:root {
+  /* ----------------------------------------------------------
+     CORES — Paleta principal
+     Regra 60-30-10:
+       60% → backgrounds neutros (warm off-white)
+       30% → superfícies (cards, surfaces)
+       10% → primária do restaurante (laranja quente)
+  ---------------------------------------------------------- */
+
+  /* Cor primária — laranja quente (apetite, energia) */
+  --color-primary: #e85d04;
+  --color-primary-light: #fb923c;
+  --color-primary-dark: #c2410c;
+  --color-primary-muted: rgba(232, 93, 4, 0.1);
+
+  /* Cor de acento */
+  --color-accent: #f97316;
+  --color-accent-light: #fed7aa;
+
+  /* Backgrounds — escala de warm neutrals */
+  --color-bg: #f7f5eb; /* igual ao --neutral-100 do cardapio-antigo */
+  --color-bg-alt: #f0ede8;
+  --color-surface: #fafaf9; /* igual ao --card do cardapio-antigo */
+  --color-surface-raised: #fafaf9;
+
+  /* Texto */
+  --color-text: #18181b;
+  --color-text-secondary: #71717a;
+  --color-text-muted: #a1a1aa;
+  --color-text-inverse: #ffffff;
+
+  /* Bordas e divisores */
+  --color-border: #e4e4e7;
+  --color-border-strong: #d4d4d8;
+  --color-divider: #f4f4f5;
+
+  /* Skeleton loading */
+  --color-skeleton-base: #e4e4e7;
+  --color-skeleton-shine: #f4f4f5;
+
+  /* Feedback — semânticos */
+  --color-success: #16a34a;
+  --color-success-light: #dcfce7;
+  --color-warning: #d97706;
+  --color-warning-light: #fef3c7;
+  --color-error: #dc2626;
+  --color-error-light: #fee2e2;
+  --color-info: #2563eb;
+  --color-info-light: #dbeafe;
+
+  /* Badge específicos */
+  --color-badge-vegano: #16a34a;
+  --color-badge-vegano-bg: #dcfce7;
+  --color-badge-picante: #dc2626;
+  --color-badge-picante-bg: #fee2e2;
+  --color-badge-promo: #d97706;
+  --color-badge-promo-bg: #fef3c7;
+  --color-badge-destaque: #7c3aed;
+  --color-badge-destaque-bg: #ede9fe;
+  --color-badge-novidade: #2563eb;
+  --color-badge-novidade-bg: #dbeafe;
+  --color-badge-gluten: #92400e;
+  --color-badge-gluten-bg: #fef3c7;
+
+  /* ----------------------------------------------------------
+     TIPOGRAFIA
+  ---------------------------------------------------------- */
+  --font-sans:
+    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", "Fira Code", monospace;
+
+  /* Escala tipográfica (Major Third — 1.25) */
+  --text-xs: 0.75rem; /* 12px */
+  --text-sm: 0.875rem; /* 14px */
+  --text-base: 1rem; /* 16px */
+  --text-lg: 1.125rem; /* 18px */
+  --text-xl: 1.25rem; /* 20px */
+  --text-2xl: 1.5rem; /* 24px */
+  --text-3xl: 1.875rem; /* 30px */
+  --text-4xl: 2.25rem; /* 36px */
+
+  /* Pesos */
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
+
+  /* Line heights */
+  --leading-tight: 1.25;
+  --leading-snug: 1.375;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.625;
+
+  /* ----------------------------------------------------------
+     ESPAÇAMENTO — Sistema de 8 pontos
+     Todos os valores são múltiplos de 4px/8px
+  ---------------------------------------------------------- */
+  --space-1: 0.25rem; /* 4px  — micro */
+  --space-2: 0.5rem; /* 8px  — small */
+  --space-3: 0.75rem; /* 12px */
+  --space-4: 1rem; /* 16px — medium */
+  --space-5: 1.25rem; /* 20px */
+  --space-6: 1.5rem; /* 24px — large */
+  --space-8: 2rem; /* 32px — xl */
+  --space-10: 2.5rem; /* 40px */
+  --space-12: 3rem; /* 48px — 2xl */
+  --space-16: 4rem; /* 64px — 3xl */
+  --space-20: 5rem; /* 80px */
+  --space-24: 6rem; /* 96px */
+
+  /* ----------------------------------------------------------
+     BORDAS & RAIOS
+  ---------------------------------------------------------- */
+  --radius-sm: 0.25rem; /* 4px */
+  --radius: 0.5rem; /* 8px */
+  --radius-md: 0.75rem; /* 12px */
+  --radius-lg: 1rem; /* 16px */
+  --radius-xl: 1.25rem; /* 20px */
+  --radius-2xl: 1.5rem; /* 24px */
+  --radius-full: 9999px; /* pílula */
+
+  --border-width: 1px;
+
+  /* ----------------------------------------------------------
+     SOMBRAS
+  ---------------------------------------------------------- */
+  --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-sm:
+    0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  --shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --shadow-md:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  --shadow-lg:
+    0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+  /* Sombra colorida para botão primário */
+  --shadow-primary: 0 4px 14px 0 rgba(232, 93, 4, 0.35);
+
+  /* ----------------------------------------------------------
+     TRANSIÇÕES — Timing recomendado (ver estrutura-projeto.md)
+  ---------------------------------------------------------- */
+  --transition-fast: 150ms ease-out;
+  --transition-base: 200ms ease-out;
+  --transition-medium: 300ms ease-out;
+  --transition-slow: 400ms ease-out;
+
+  /* Easing curves */
+  --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-out-back: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* ----------------------------------------------------------
+     Z-INDEX — Camadas de stacking
+  ---------------------------------------------------------- */
+  --z-base: 0;
+  --z-raised: 10;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-overlay: 300;
+  --z-drawer: 400;
+  --z-modal: 500;
+  --z-toast: 600;
+  --z-tooltip: 700;
+
+  /* ----------------------------------------------------------
+     LAYOUT
+  ---------------------------------------------------------- */
+  --header-height: 64px;
+  --category-nav-height: 56px;
+  --mobile-cart-bar-height: 72px;
+
+  /* Largura máxima do conteúdo */
+  --container-max: 1280px;
+  --content-max: 860px;
+
+  /* Largura da coluna do carrinho no desktop */
+  --cart-column-width: 400px;
+
+  /* ----------------------------------------------------------
+     BREAKPOINTS (para referência — use media queries no CSS)
+  ---------------------------------------------------------- */
+  /* sm:  640px  */
+  /* md:  768px  */
+  /* lg:  1024px */
+  /* xl:  1280px */
+}

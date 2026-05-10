@@ -1,0 +1,102 @@
+/* ============================================================
+   badge.css — Componente Badge
+   Badges: vegano, picante, promoção, destaque, novidade, sem-gluten
+   ============================================================ */
+
+/* Base do badge */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 2px var(--space-2);
+  border-radius: var(--radius-full);
+  font-size: 11px;
+  font-weight: var(--font-semibold);
+  line-height: 1.4;
+  white-space: nowrap;
+  letter-spacing: 0.01em;
+  /* Evitar quebra de linha */
+  flex-shrink: 0;
+}
+
+/* ----------------------------------------------------------
+   Variantes por tipo
+---------------------------------------------------------- */
+
+/* 🌱 Vegetariano / Vegano */
+.badge--vegetariano,
+.badge--vegano {
+  background-color: var(--color-badge-vegano-bg);
+  color: var(--color-badge-vegano);
+}
+
+/* 🌶️ Picante */
+.badge--picante {
+  background-color: var(--color-badge-picante-bg);
+  color: var(--color-badge-picante);
+}
+
+/* 🔥 Promoção */
+.badge--promo,
+.badge--promocao {
+  background-color: var(--color-badge-promo-bg);
+  color: var(--color-badge-promo);
+}
+
+/* ⭐ Destaque */
+.badge--destaque {
+  background-color: var(--color-badge-destaque-bg);
+  color: var(--color-badge-destaque);
+}
+
+/* 🆕 Novidade */
+.badge--novidade {
+  background-color: var(--color-badge-novidade-bg);
+  color: var(--color-badge-novidade);
+}
+
+/* 🌾 Sem glúten */
+.badge--sem-gluten {
+  background-color: var(--color-badge-gluten-bg);
+  color: var(--color-badge-gluten);
+}
+
+/* ----------------------------------------------------------
+   Badge de oferta (maior, mais chamativo)
+---------------------------------------------------------- */
+.badge--offer {
+  padding: var(--space-1) var(--space-3);
+  font-size: var(--text-sm);
+  font-weight: var(--font-bold);
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+/* ----------------------------------------------------------
+   Badge do carrinho (contador)
+---------------------------------------------------------- */
+.badge--count {
+  min-width: 20px;
+  height: 20px;
+  padding-inline: var(--space-1);
+  border-radius: var(--radius-full);
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+  font-size: 11px;
+  font-weight: var(--font-bold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ----------------------------------------------------------
+   Grupo de badges (em linha)
+---------------------------------------------------------- */
+.badge-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  align-items: center;
+}
