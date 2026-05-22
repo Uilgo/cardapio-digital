@@ -1,14 +1,14 @@
 {
-  "name": "Mestre dos Salgados",
+  "name": "Pizzaria Maluca",
   "slogan": "Salgados, pizzas e bebidas com muito sabor!",
   "description": "Especialistas em salgados e mini salgados artesanais, pizzas quentinhas e bebidas geladas. Sucos, vitaminas e refrigerantes para completar seu pedido.",
-  "slug": "mestre-dos-salgados",
+  "slug": "pizzaria-maluca",
   "logo": "../assets/img/logo.png",
   "capa": null,
 
   "whatsapp": "5584996551792",
   "phone": null,
-  "instagram": "@mestreDOSsalgados",
+  "instagram": "@pizzariamaluca",
   "address": "Rua das Flores, 123 — Centro",
   "city": "Santa Maria",
   "state": "RN",
